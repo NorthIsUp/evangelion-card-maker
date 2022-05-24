@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Evangelion Title Card Generator</title>
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    /> -->
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NorthIsUp" />
+
+  <link href="fonts/iosevka.css" rel="stylesheet" type="text/css" />
+  <link href="fonts/iosevka-etoile.css" rel="stylesheet" type="text/css" />
+  <link href="style/eva.css" rel="stylesheet" type="text/css" />
+
+  <title>Evangelion Title Card Generator</title>
+  <link rel="canonical" href="index.html" />
+
+  <script>var exports = {};</script>
+  <script src="./dist/eva-title.js"></script>
+
+</head>
+
+<body>
+  <section id="content">
+    <div id="input-container" onchange="generate();" onkeyup="generate();">
+      <div id="main-fields">
+        <label for="darkMode">Dark</label>
+        <input id="darkMode" type="checkbox" checked/>
+        <br/>
+        <label for="topText">Line One</label>
+        <input id="topText" type="text" value="neon"  />
+        <input id="topTextCaps" type="checkbox" checked />
+        <br />
+        <label for="midText">Line Two</label>
+        <input id="midText" type="text" value="genesis"  />
+        <input id="midTextCaps" type="checkbox" checked />
+        <br />
+        <label for="botText">Line Three</label>
+        <input id="botText" type="text" value="evangelion"  />
+        <input id="botTextCaps" type="checkbox" checked />
+        <br />
+        <label for="epText">"EPISODE"</label>
+        <input id="epText" type="text" value="episode:26"  />
+        <input id="epTextCaps" type="checkbox" checked />
+        <br />
+        <label for="titleText">Byline</label>
+        <textarea id="titleText" type="input">世界の中心でアイを叫んだけもの</textarea>
+        <input id="titleTextCaps" type="checkbox" checked />
+        <br />
+        <label for="titleAlign">Alignment</label>
+        <select id="titleAlign" >
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right" selected="">Right</option>
+        </select>
+      </div>
+    </div>
+    <div id="buttons">
+    <a class="generate" href="javascript:generate();">
+      Generate
+    </a>
+    <a class="download" href="" download="eva-title.png" onclick="download_img(this);">
+      Download
+    </a>
+    </div>
+    <div id="titlecard">
+      <canvas id="eva-title"></canvas>
+    </div>
+  </section>
+
+  <script>generate()</script>
+</body>
+
+</html>

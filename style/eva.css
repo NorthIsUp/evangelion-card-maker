@@ -1,0 +1,475 @@
+* {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  text-decoration-skip-ink: auto;
+}
+
+body {
+  background: #151515;
+  font-size: 14px;
+  line-height: 170%;
+  max-width: 95%;
+  margin: auto;
+}
+
+p {
+  margin: 27px 0;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  margin: 10px auto 10px auto;
+  max-width: 100%;
+  display: block;
+}
+
+.right-justify-image img {
+  float: right;
+  vertical-align: top;
+  width: 25%;
+  margin-left: 1em;
+}
+
+.left-justify {
+  float: left;
+}
+
+.right-justify {
+  float: right;
+}
+
+pre,
+code {
+  font-size: 14px;
+}
+
+code {
+  padding: 4px;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+  word-wrap: normal;
+  padding: 16px;
+  overflow: auto;
+  font-size: 100%;
+  line-height: 1.45;
+}
+
+pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 95%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+pre code::before,
+pre code::after {
+  content: normal;
+}
+
+em,
+q,
+em,
+dfn {
+  font-style: italic;
+}
+
+.sans,
+body,
+html .gist .gist-file .gist-meta {
+  font-family: "Iosevka Etoile Web", Helvetica, Arial, sans-serif;
+}
+
+.mono,
+pre,
+code,
+tt,
+p code,
+li code {
+  font-family: "Iosevka Web", Hack, Menlo, Consolas, monospace;
+}
+
+.heading,
+.serif,
+h1,
+h2,
+h3 {
+  font-family: "Iosevka Etoile Web", serif;
+}
+
+strong {
+  font-weight: 700;
+}
+
+q:before {
+  content: "\201C";
+}
+
+q:after {
+  content: "\201D";
+}
+
+del,
+s {
+  text-decoration: line-through;
+}
+
+blockquote {
+  font-family: "Iosevka Etoile Web", serif;
+  text-align: center;
+  padding: 20px;
+}
+
+blockquote p {
+  display: inline-block;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 120%;
+}
+
+blockquote:before,
+blockquote:after {
+  font-family: "Iosevka Etoile Web", serif;
+  content: "\201C";
+  font-size: 32px;
+  color: #403c3b;
+}
+
+blockquote:after {
+  content: "\201D";
+}
+
+hr {
+  width: 40%;
+  height: 1px;
+  background: #ebebeb;
+  margin: 25px auto;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 18px;
+}
+
+h1 a,
+h2 a,
+h3 a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  margin-top: 30px;
+}
+
+#sub-header,
+time {
+  color: #bababa;
+  font-size: 14px;
+}
+
+#sub-header {
+  margin: 0 0;
+}
+
+#nav h1 a {
+  font-size: 34px;
+  line-height: 120%;
+}
+
+.posts_listing a,
+#nav a {
+  text-decoration: none;
+}
+
+li {
+  margin-left: 20px;
+}
+
+ul li {
+  margin-left: 1em;
+}
+
+ul li {
+  list-style-type: none;
+}
+ul li:before {
+  content: "\2023 \0020";
+}
+
+#nav ul li:before,
+.posts_listing li:before {
+  content: "";
+  margin-right: 0;
+}
+
+#content {
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+  padding: 2em 0 6em 0;
+}
+
+#content h1,
+#content h2 {
+  margin-bottom: 5px;
+}
+
+#content h1 {
+  font-size: 28px;
+}
+
+#content h2 {
+  font-size: 24px;
+}
+
+#content .entry-content {
+  margin-top: 16px;
+}
+
+#content time {
+  margin-left: 3px;
+}
+
+#content a {
+  color: #d9b3ff;
+  text-decoration: none;
+}
+
+#content a:hover {
+  text-decoration: underline;
+}
+
+#content .parent-link {
+  text-align: center;
+}
+
+.highlight {
+  margin: 10px 0;
+}
+
+.posts_listing {
+  margin: 50px 0 30px 0;
+}
+
+.posts_listing li {
+  margin: 25px 0 25px 0px;
+}
+
+.posts_listing li a:hover,
+#nav a:hover {
+  text-decoration: underline;
+}
+
+.pub-venue {
+  font-style: italic;
+}
+
+#nav {
+  text-align: center;
+  position: static;
+  margin-top: 60px;
+}
+
+#nav ul {
+  display: table;
+  margin: 8px auto 0 auto;
+}
+
+#nav li {
+  list-style-type: none;
+  display: table-cell;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+#links {
+  padding: 3em 0 2em 0;
+}
+
+#content .project {
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 1em 0;
+}
+
+#content .project h2 {
+  font-size: 1.5em;
+}
+
+#content .project .header {
+  font-size: 1.6em;
+  margin-bottom: 0.8em;
+}
+
+#content .project .header :first-child {
+  margin-right: 0.5em;
+}
+
+#content .project .header .date {
+  font-size: 0.8em;
+  color: #555;
+}
+
+#content .project .container {
+  display: flex;
+}
+
+#content .project .container .content {
+  flex-grow: 1;
+}
+
+#content .project .container .content p {
+  margin: 0 0 1.2em 0;
+}
+
+#content .project .container .image {
+  margin-left: 1.5em;
+  flex: 0 0 15em;
+}
+
+@media (max-width: 750px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #nav h1 a {
+    font-size: 28px;
+  }
+
+  #nav li {
+    font-size: 14px;
+    padding: 0 14px;
+  }
+
+  #content {
+    margin-top: 0;
+    padding-top: 50px;
+    font-size: 14px;
+  }
+
+  #content h1 {
+    font-size: 25px;
+  }
+
+  #content h2 {
+    font-size: 22px;
+  }
+
+  .posts_listing li div {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #nav h1 a {
+    font-size: 22px;
+  }
+
+  #nav li {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  #content {
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 12px;
+  }
+
+  #content h1 {
+    font-size: 20px;
+  }
+
+  #content h2 {
+    font-size: 18px;
+  }
+
+  .posts_listing li div {
+    font-size: 12px;
+  }
+}
+
+input,
+textarea,
+select,
+button {
+  background-color: black;
+}
+
+#input-container {
+  display: block;
+  padding: 3em 0 2.5em 0;
+  display: block;
+}
+
+#main-fields {
+  float: left;
+  padding-right: 1em;
+}
+
+#title-fields {
+}
+#buttons {
+}
+
+label {
+  display: inline-block;
+  width: 6em;
+  vertical-align: top;
+  padding-bottom: 0.3em;
+}
+
+textarea {
+  display: inline-block;
+  width: 18em;
+}
+
+#content a.generate,
+#content a.download {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  border: 0.1em solid #f2f2f2;
+  border-radius: 0.2em;
+  padding: 0.5em 2em;
+  margin: 1em 1em 1.5em 0;
+}
